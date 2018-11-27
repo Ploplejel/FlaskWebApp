@@ -6,10 +6,7 @@ from flask import render_template
 def index():
     return render_template('index.html')
 
-@app.route('/user/<name>')
-def getUser(name):
-    return render_template('user.html', name=name)
-
-@app.route('/kotki')
-def getKotki():
-    return render_template('kotki.html')
+@app.route('/galeria')
+def getGaleria():
+    obrazki = ["http://memy.pl/show/big/uploads/Post/72312/14677121051422.jpg", "https://www.wprost.pl/_thumb/d0/90/d0dd798bc6dcfd022a8eef89963a.jpeg", "https://pobierak.jeja.pl/images/4/b/a/248059_wybierz-klase-postaci.jpg"]
+    return render_template('galeria.html')
