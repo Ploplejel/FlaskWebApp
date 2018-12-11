@@ -16,3 +16,7 @@ def getGalery():
         'https://cdn2.unrealengine.com/Fortnite%2Fbattle-royale%2Fseason6-social-1920x1080-0a72ec2f35dfe5be6cf8a77ec16063cca4db7046.jpg'
     ]
     return render_template('galeria.html', listaObrazkow=listaObrazkow, title="Galeria")
+
+@app.route('/alexa')
+def alexa():
+    return render_template('alexa.html')
